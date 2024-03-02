@@ -79,6 +79,7 @@ source /usr/share/doc/fzf/examples/completion.zsh
 
 # export MANPATH="/usr/local/man:$MANPATH"
 export PATH="$PATH:/opt/nvim-linux64/bin"
+export PATH="$HOME/.local/bin:$PATH"
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 

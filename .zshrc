@@ -102,6 +102,8 @@ export PATH="$PATH:/opt/nvim-linux64/bin"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ls='eza'
 alias vim='nvim'
+alias giam='git add . && git commit -m'
+alias gis='git status'
 
 eval "$(starship init zsh)"
 ZSH_THEME="agnoster"

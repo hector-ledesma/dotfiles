@@ -1,3 +1,4 @@
+vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 -- move highlighted lines up and down, and indent

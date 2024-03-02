@@ -102,6 +102,7 @@ export PATH="$PATH:/opt/nvim-linux64/bin"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ls='eza'
 alias vim='nvim'
+alias cd='z'
 alias giam='git add . && git commit -m'
 alias gis='git status'
 
@@ -111,3 +112,4 @@ ZSH_THEME="agnoster"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+eval "$(zoxide init zsh)"

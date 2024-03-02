@@ -100,6 +100,9 @@ export PATH="$PATH:/opt/nvim-linux64/bin"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias ls='eza'
+alias vim='nvim'
+
 eval "$(starship init zsh)"
 ZSH_THEME="agnoster"
 

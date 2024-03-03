@@ -33,3 +33,9 @@ vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 
 vim.keymap.set("n", "Q", "<nop>")
 
+-- Run formatter
+vim.keymap.set("n", "<leader>fm", "<cmd>lua vim.lsp.buf.format()<CR>")
+
+-- Dap bindings
+vim.keymap.set("n", "<leader>db", "<cmd> DapToggleBreakpoint <CR>", {desc = "Add breakpoint at line"})
+vim.keymap.set("n", "<leader>dr", "<cmd> DapContinue <CR>", {desc = "Start or continue the debugger"})

@@ -36,7 +36,8 @@ local lsp_zero = require("lsp-zero")
 
 require("mason").setup({})
 require("mason-lspconfig").setup({
-	ensure_installed = {'tsserver', 'bashls', 'clangd', 'cssls', 'dockerls', 'html', 'jdtls', 'ltex', 'lua_ls', 'marksman', 'pyright'},
+	ensure_installed = {'tsserver', 'bashls', 'clangd', 'cssls', 'dockerls', 'html', 'jdtls', 'ltex', 'lua_ls', 'marksman', 'pyright',
+},
 	handlers = {
 		default_setup,
 		lua_ls = function()
@@ -75,4 +76,12 @@ cmp.setup({
 			require('luasnip').lsp_expand(args.body)
 		end,
 	},
+})
+
+-- Debugging setup
+require("mason-nvim-dap").setup({
+    ensure_installed = {'codelldb'},
+    handlers = {},
+    automatic_installation = true,
+    automatic_setup = true,
 })

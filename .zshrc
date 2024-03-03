@@ -106,6 +106,7 @@ alias vim='nvim'
 alias cd='z'
 alias giam='git add . && git commit -m'
 alias gis='git status'
+alias clang-format="ln -s ~/dotfiles/.clang-format ./.clang-format"
 
 eval "$(starship init zsh)"
 ZSH_THEME="agnoster"

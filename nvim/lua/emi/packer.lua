@@ -63,11 +63,26 @@ return require('packer').startup(function(use)
         },
         config = function()
             require("mason-tool-installer").setup({
-                ensure_installed = { 'codelldb' }
+                ensure_installed = {
+                    -- C++
+                    'codelldb',
+                    -- Python
+                    'mypy', 'ruff', 'black', 'debugpy' }
             })
         end
     }
     use 'mfussenegger/nvim-dap'
+    use {
+        'mfussenegger/nvim-dap-python',
+        ft = 'python',
+        requires = {
+            'mfussenegger/nvim-dap',
+        },
+        config = function(_, opts)
+            local path = "~/.local/share/nvim/mason/packages/debugpy/venv/bin/python"
+            require("dap-python").setup(path)
+        end
+    }
     use "jay-babu/mason-nvim-dap.nvim"
     use { "rcarriga/nvim-dap-ui",
         requires = { "mfussenegger/nvim-dap" },

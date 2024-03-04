@@ -5,7 +5,10 @@ null_ls.setup({
     sources = {
         null_ls.builtins.formatting.stylua,
         null_ls.builtins.formatting.clang_format,
-        null_ls.builtins.diagnostics.flake8,
+        null_ls.builtins.formatting.black,
+        --null_ls.builtins.diagnostics.flake8,
+        null_ls.builtins.diagnostics.mypy,
+        null_ls.builtins.diagnostics.ruff,
         null_ls.builtins.completion.spell,
     },
     on_attach = function(client, bufnr)
@@ -17,7 +20,7 @@ null_ls.setup({
             vim.api.nvim_create_autocmd("BufWritePre", {
                 group = augroup,
                 buffer = bufnr,
-                callback = function ()
+                callback = function()
                     vim.lsp.buf.format({ async = false })
                 end,
             })

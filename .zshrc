@@ -80,6 +80,8 @@ source /usr/share/doc/fzf/examples/completion.zsh
 # export MANPATH="/usr/local/man:$MANPATH"
 export PATH="$PATH:/opt/nvim-linux64/bin"
 export PATH="$HOME/.local/bin:$PATH"
+export GRADLE_HOME="/opt/gradle/gradle-7.6.4/"
+export PATH="$GRADLE_HOME/bin:$PATH"
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 

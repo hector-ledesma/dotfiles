@@ -11,7 +11,7 @@ null_ls.setup({
         null_ls.builtins.diagnostics.ruff,
         null_ls.builtins.completion.spell,
     },
-    on_attach = function(client, bufnr)
+    --[[ on_attach = function(client, bufnr)
         if client.supports_method("textDocument/formatting") then
             vim.api.nvim_clear_autocmds({
                 group = augroup,
@@ -25,5 +25,5 @@ null_ls.setup({
                 end,
             })
         end
-    end,
+    end, ]] --
 })

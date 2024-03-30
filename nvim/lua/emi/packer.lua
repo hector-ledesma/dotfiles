@@ -22,6 +22,7 @@ return require('packer').startup(function(use)
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
     use { "catppuccin/nvim", as = "catppuccin" }
+    use ({ 'projekt0n/github-nvim-theme' })
     use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
     use {
         "ThePrimeagen/harpoon",
@@ -85,7 +86,7 @@ return require('packer').startup(function(use)
     }
     use "jay-babu/mason-nvim-dap.nvim"
     use { "rcarriga/nvim-dap-ui",
-        requires = { "mfussenegger/nvim-dap" },
+        requires = { "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio" },
         config = function()
             local dap = require("dap")
             local dapui = require("dapui")

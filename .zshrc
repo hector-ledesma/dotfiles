@@ -83,7 +83,7 @@ export PATH="$HOME/.local/bin:$PATH"
 export GRADLE_HOME="/opt/gradle/gradle-7.6.4/"
 export PATH="$GRADLE_HOME/bin:$PATH"
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then

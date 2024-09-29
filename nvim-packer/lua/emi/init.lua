@@ -1,3 +1,4 @@
+print("If this shit prints bro....")
 require("emi.packer")
 require("emi.remap")
 require("emi.set")

@@ -258,9 +258,19 @@ require("lazy").setup({
     },
     -- # Editing
     {
-      "williamboman/mason.nvim",
+      "williamboman/mason.nvim", -- mason.nvim is optimized to load as little as possible during setup. Lazy-loading the plugin, or somehow deferring the setup, is not recommended.
       opts = {}
     },
+    {
+      "OXY2DEV/markview.nvim",
+      lazy = false,      -- Recommended
+      -- ft = "markdown" -- If you decide to lazy-load anyway
+  
+      dependencies = {
+          "nvim-treesitter/nvim-treesitter",
+          "nvim-tree/nvim-web-devicons"
+      }
+  },
     -- ## LSP
     {"neovim/nvim-lspconfig"},
     {"williamboman/mason-lspconfig.nvim"},

@@ -1,2 +1,3 @@
 #!/bin/zsh
-man cat | vim - --cmd "setfiletype man"
+
+man cat | nvim - --cmd "setfiletype man"

@@ -320,3 +320,10 @@ end
 -- which-key seems to require more specific registration for keymappings
 -- PROPERLY REGISTER KEY BINDINGS FOR:
 -- marks
+-- `jk` roll out of insert mode
+-- some other roll motion for saving
+-- relative number lines
+-- 4 space stabs
+-- character limit/line length
+-- ignore caps search
+-- live search/incremental search

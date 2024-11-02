@@ -327,3 +327,6 @@ end
 -- character limit/line length
 -- ignore caps search
 -- live search/incremental search
+-- clearer indicator of which mode I'm in (tmux too)
+-- Breadcrumbs for directory?
+-- IntelliJ's tracking of my nesting. Which function I'm in type shit

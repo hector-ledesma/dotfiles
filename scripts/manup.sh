@@ -6,4 +6,10 @@ if [ $# -lt 1 ]; then
 	exit 1
 fi
 
-man $1 | nvim - -R --cmd "setfiletype man"
+MANPAGE=$(man $1)
+
+if [ $? -ne 0 ]; then
+	exit $?
+fi
+
+echo $MANPAGE | nvim - -R --cmd "setfiletype man"
